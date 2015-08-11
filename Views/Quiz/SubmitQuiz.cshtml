@@ -1,0 +1,96 @@
+﻿@model QuizMVC.Code.SubmitQuizModel
+@{
+    ViewBag.Title = "SubmitQuiz";
+}
+<head runat="server">
+    <title></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CSS/style.css" rel="stylesheet" />
+    <style>
+        .brandbg {
+            background-image: linear-gradient(to bottom, #1F4FA2 0%, #20478B 100%);
+            background-repeat: repeat-x;
+            border-radius: 0px;
+        }
+
+        .shadow-sml {
+            box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.65);
+            border: 1px solid #DDD;
+        }
+
+        .container {
+            max-width: 1170px;
+        }
+
+        .labelQuestion {
+            background-color: #D0DEF6;
+            color: #224;
+            cursor: pointer;
+            display: block;
+            font-family: "Segoe UI",Calibri,Arial;
+            font-weight: 600;
+            text-align: left;
+            font-size: 20px;
+            margin: 10px;
+            min-width: 350px;
+            padding: 10px 15px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<div class="container">
+    @using (Html.BeginForm("Index", "Quiz"))
+    {
+        <div class="header ng-scope">
+            <div class="row">
+                <div>
+                    <h2>Quiz Application</h2>
+                </div>
+                <hr>
+            </div>
+            <div class="ng-scope" id="quiz">
+                <h1 class="center ng-binding">@Html.DisplayTextFor(model => model.Title) </h1>
+                <hr>
+
+
+                <div ng-show="mode=='quiz'">
+                    @for (int qCounter = 0; qCounter < Model.Questions.Count; qCounter++)
+                    {
+                        <div class="ng-scope">
+                            <div class="question">
+                                <h2 class="ng-binding"> @Model.Questions[qCounter].QuestionDetails </h2>
+                                <div class="options">
+
+                                    @for (int optionCount = 0; optionCount < Model.Questions[qCounter].Options.Count(); optionCount++)
+                                    {<label class="labelQuestion">
+                                        @Html.RadioButtonFor(model => model.Questions[qCounter].Options,
+                                        @Model.Questions[qCounter].Options[optionCount].Id,
+                                        @Model.Questions[qCounter].Options[optionCount].IsSelected ? new { Checked = "checked" } : null)
+
+                                        @Html.DisplayTextFor(model => model.Questions[qCounter].Options[optionCount].Optiontext)
+
+
+                                    </label>
+                                    }
+                                    @if (Model.Questions[qCounter].Options[Model.Questions[qCounter].correct].IsSelected)
+                                    {
+                                        <h4 class="alert alert-success">Your answer is correct.</h4>
+                                    }
+                                    else
+                                    {
+                                        <h4 class="alert alert-danger">Your answer is wrong.</h4>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    }
+
+                </div>
+                <hr>
+            </div>
+        </div>
+    }
+</div>

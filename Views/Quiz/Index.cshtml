@@ -1,0 +1,107 @@
+﻿@model QuizMVC.Code.QuizModel
+@{
+
+    ViewBag.Title = "Index";
+}
+<head runat="server">
+    <title></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CSS/style.css" rel="stylesheet" />
+    <style>
+        .brandbg
+        {
+            background-image: linear-gradient(to bottom, #1F4FA2 0%, #20478B 100%);
+            background-repeat: repeat-x;
+            border-radius: 0px;
+        }
+
+        .shadow-sml
+        {
+            box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.65);
+            border: 1px solid #DDD;
+        }
+
+        .container
+        {
+            max-width: 1170px;
+        }
+
+        .labelQuestion
+        {
+            background-color: #D0DEF6;
+            color: #224;
+            cursor: pointer;
+            display: block;
+            font-family: "Segoe UI",Calibri,Arial;
+            font-weight: 600;
+            text-align: left;
+            font-size: 20px;
+            margin: 10px;
+            min-width: 350px;
+            padding: 10px 15px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<div class="container">
+    @using (Html.BeginForm("Index", "Quiz"))
+    {
+        <div class="header ng-scope">
+            <div class="row">
+                <div>
+                    <h2>Quiz Application</h2>
+                </div>
+                <hr>
+            </div>
+            <div class="ng-scope" id="quiz">
+                <h1 class="center ng-binding">@Html.DisplayTextFor(model => model.Title) </h1>
+                <hr>@Html.HiddenFor(model => model.TotalNumber)  @Html.HiddenFor(model => model.Sequence) @Html.HiddenFor(model => model.SelectedNumber)
+                @Html.HiddenFor(Model => Model.Title)
+                <div ng-show="mode=='quiz'">
+                    <!-- ngRepeat: question in filteredQuestions -->
+                    <div class="ng-scope" ng-repeat="question in filteredQuestions">
+                        <div class="label label-warning ng-binding">Question @Html.DisplayTextFor(model => model.SelectedNumber)  of @Html.DisplayTextFor(model => model.TotalNumber).</div>
+                        <div class="question">
+                            <h2 class="ng-binding">@Html.DisplayTextFor(model => model.ModelQuestion.QuestionDetails) </h2>
+                            <div class="options">
+
+                                @for (int optionCount = 0; optionCount < Model.ModelQuestion.Options.Count(); optionCount++)
+                                {<label class="labelQuestion">
+                                    @Html.RadioButtonFor(model => model.ModelQuestion.Options, @Model.ModelQuestion.Options[optionCount].Id,
+                                         @Model.ModelQuestion.Options[optionCount].IsSelected ? new { Checked = "checked" } : null)
+
+                                    @Html.DisplayTextFor(model => model.ModelQuestion.Options[optionCount].Optiontext)
+
+
+                                </label>
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="quizNav">
+                        <div>
+                            <button class="btn btn-default" name="direction" value="First" type="submit">First</button>
+                            <button class="btn btn-default" name="direction" value="Prev" type="submit">Prev</button>
+                            <button class="btn btn-primary" name="direction" value="Next" type="submit">Next</button>
+                            <button class="btn btn-default" name="direction" value="Last" type="submit">Last</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+          <div>
+        @* @using (Html.BeginForm("SubmitQuiz", "Quiz"))
+        {
+            *@
+        <button class="btn btn-primary" name="direction" value="Submit" type="submit">Submit Quiz</button>
+        @*  }*@
+    </div>
+    }
+  
+</div>
