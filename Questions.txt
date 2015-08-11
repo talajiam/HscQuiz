@@ -1,1 +1,200 @@
-[{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 1","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 2","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 3","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 4","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 5","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 6","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails 7":" Questions in detail","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 8","correct":0},{"Options":[{"Id":1,"Optiontext":"New Option 1"},{"Id":2,"Optiontext":"New Option 2"},{"Id":3,"Optiontext":"New Option 3"},{"Id":4,"Optiontext":"New Option 4"}],"QuestionDetails":" Questions in detail 9","correct":0}]
+[
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "This type of design pattern comes under creational pattern"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "Factory pattern creates object without exposing the creation logic to the client"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3Factory pattern refers to newly created object using a common interface."
+      },
+      {
+        "Id": 4,
+        "Optiontext": "All of Above"
+      }
+    ],
+    "QuestionDetails": " Which of the following is correct about Factory design pattern.",
+    "correct": 3
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "This pattern is used to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation."
+      },
+      {
+        "Id": 2,
+        "Optiontext": "This pattern is used to reduce communication complexity between multiple objects or classes."
+      },
+      {
+        "Id": 3,
+        "Optiontext": "This pattern is used to restore state of an object to a previous state."
+      },
+      {
+        "Id": 4,
+        "Optiontext": "This pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically."
+      }
+    ],
+    "QuestionDetails": " Questions in detail 2Which of the following describes the Observer pattern correctly?",
+    "correct": 3
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 3",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 4",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 5",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 6",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails 7": " Questions in detail",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 8",
+    "correct": 0
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "New Option 1"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "New Option 2"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "New Option 3"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "New Option 4"
+      }
+    ],
+    "QuestionDetails": " Questions in detail 9",
+    "correct": 0
+  }
+]
