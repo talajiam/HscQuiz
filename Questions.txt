@@ -40,117 +40,117 @@
         "Optiontext": "This pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically."
       }
     ],
-    "QuestionDetails": " Questions in detail 2Which of the following describes the Observer pattern correctly?",
+    "QuestionDetails": "Which of the following describes the Observer pattern correctly?",
     "correct": 3
   },
   {
     "Options": [
       {
         "Id": 1,
-        "Optiontext": "New Option 1"
+        "Optiontext": "5"
       },
       {
         "Id": 2,
-        "Optiontext": "New Option 2"
+        "Optiontext": "5"
       },
       {
         "Id": 3,
-        "Optiontext": "New Option 3"
+        "Optiontext": "6"
       },
       {
         "Id": 4,
-        "Optiontext": "New Option 4"
+        "Optiontext": "7"
       }
     ],
-    "QuestionDetails": " Questions in detail 3",
+    "QuestionDetails": " How many layers are in the OSI model?",
+    "correct": 3
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "Bonjour"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "Boot camp"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "iBoot"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "None of the above"
+      }
+    ],
+    "QuestionDetails": "What program allows an Apple computer to run Microsoft Windows?",
+    "correct": 1
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "#RRBBGG"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "#GGRRBB"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "#RRGGBB"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "##BBRRGG"
+      }
+    ],
+    "QuestionDetails": "A six digit Hex color code (#ADD8E6) defines values of Red, Blue, and Green in what order?",
+    "correct": 2
+  },
+  {
+    "Options": [
+      {
+        "Id": 1,
+        "Optiontext": "Miux"
+      },
+      {
+        "Id": 2,
+        "Optiontext": "MLinux"
+      },
+      {
+        "Id": 3,
+        "Optiontext": "Blue Moon"
+      },
+      {
+        "Id": 4,
+        "Optiontext": "None of the Above"
+      }
+    ],
+    "QuestionDetails": "Which of the following is Microsoft Linux OS?",
     "correct": 0
   },
   {
     "Options": [
       {
         "Id": 1,
-        "Optiontext": "New Option 1"
+        "Optiontext": "Opera"
       },
       {
         "Id": 2,
-        "Optiontext": "New Option 2"
+        "Optiontext": "Mozila"
       },
       {
         "Id": 3,
-        "Optiontext": "New Option 3"
+        "Optiontext": "Torch"
       },
       {
         "Id": 4,
-        "Optiontext": "New Option 4"
+        "Optiontext": "Sea Monkey"
       }
     ],
-    "QuestionDetails": " Questions in detail 4",
-    "correct": 0
-  },
-  {
-    "Options": [
-      {
-        "Id": 1,
-        "Optiontext": "New Option 1"
-      },
-      {
-        "Id": 2,
-        "Optiontext": "New Option 2"
-      },
-      {
-        "Id": 3,
-        "Optiontext": "New Option 3"
-      },
-      {
-        "Id": 4,
-        "Optiontext": "New Option 4"
-      }
-    ],
-    "QuestionDetails": " Questions in detail 5",
-    "correct": 0
-  },
-  {
-    "Options": [
-      {
-        "Id": 1,
-        "Optiontext": "New Option 1"
-      },
-      {
-        "Id": 2,
-        "Optiontext": "New Option 2"
-      },
-      {
-        "Id": 3,
-        "Optiontext": "New Option 3"
-      },
-      {
-        "Id": 4,
-        "Optiontext": "New Option 4"
-      }
-    ],
-    "QuestionDetails": " Questions in detail 6",
-    "correct": 0
-  },
-  {
-    "Options": [
-      {
-        "Id": 1,
-        "Optiontext": "New Option 1"
-      },
-      {
-        "Id": 2,
-        "Optiontext": "New Option 2"
-      },
-      {
-        "Id": 3,
-        "Optiontext": "New Option 3"
-      },
-      {
-        "Id": 4,
-        "Optiontext": "New Option 4"
-      }
-    ],
-    "QuestionDetails 7": " Questions in detail",
+    "QuestionDetails": "Which Browser Marker is for Sale?",
     "correct": 0
   },
   {
